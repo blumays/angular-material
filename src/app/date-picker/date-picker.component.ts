@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./date-picker.component.sass']
 })
 export class DatePickerComponent  {
-  isOpened = true;
+  isOpened = false;
   @Output() monthSelected: EventEmitter<Date>;
 
   public onMonthSelected(event: Date) {
