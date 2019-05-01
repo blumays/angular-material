@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatAutocompleteSelectedEvent } from '@angular/material';
+import { MatAutocompleteSelectedEvent, MatCheckboxChange } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ import { MatAutocompleteSelectedEvent } from '@angular/material';
 export class AppComponent {
   public monthSelected = Date;
   public optionSelected: MatAutocompleteSelectedEvent;
+  public checkbox: MatCheckboxChange;
 
   onmonthSelected(date) {
     this.monthSelected = Date;
@@ -16,7 +17,12 @@ export class AppComponent {
   }
   onOptionSelected(event) {
     this.optionSelected = event;
-    console.log(event)
+    console.log(event);
+  }
+
+  onCheckBox(event) {
+    this.checkbox = event;
+    console.log(event);
   }
 
 }

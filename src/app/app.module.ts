@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import {MatDatepickerModule, MatFormFieldModule, MatNativeDateModule, MatInputModule, MatAutocompleteModule} from '@angular/material';
+// tslint:disable-next-line:max-line-length
+import {MatDatepickerModule, MatFormFieldModule, MatNativeDateModule, MatInputModule, MatAutocompleteModule, MatCheckboxModule} from '@angular/material';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     AppRoutingModule,
     FormsModule,
     MatAutocompleteModule,
+    MatCheckboxModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
