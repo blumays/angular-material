@@ -14,6 +14,6 @@ export class CheckboxComponent {
   public checkboxUpdated(event: MatCheckboxChange) {
     const checkedbox = event.checked;
     this.checkboxChange.emit(checkedbox);
-    // console.log(event);
+    console.log(event);
   }
 }

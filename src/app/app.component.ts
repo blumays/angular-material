@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatAutocompleteSelectedEvent, MatCheckboxChange } from '@angular/material';
+import { MatAutocompleteSelectedEvent, MatCheckboxChange, MatRadioChange, MatSliderChange } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,8 @@ export class AppComponent {
   public monthSelected = Date;
   public optionSelected: MatAutocompleteSelectedEvent;
   public checkbox: MatCheckboxChange;
+  public radioButton: MatRadioChange;
+  public slider: MatSliderChange;
 
   onmonthSelected(date) {
     this.monthSelected = Date;
@@ -22,7 +24,16 @@ export class AppComponent {
 
   onCheckBox(event) {
     this.checkbox = event;
-    console.log(event);
+    // console.log(event);
+  }
+
+  onRadiobutton(event) {
+    this.radioButton = event;
+    // console.log(event);
+  }
+
+  onSlider(event) {
+    this.slider = event;
   }
 
 }
